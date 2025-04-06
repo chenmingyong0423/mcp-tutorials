@@ -112,8 +112,9 @@ func main() {
 		})
 	}
 
-	// 启动基于 stdio 传输类型的服务
+	// 启动基于 stdio 的服务器
 	if err := server.ServeStdio(s); err != nil {
 		fmt.Printf("Server error: %v\n", err)
 	}
+
 }
